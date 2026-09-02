@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>WatchEarn BD</title><link rel="stylesheet" href="style.css">
+</head><body>
+<div id="auth" class="auth"><div class="auth-card"><div class="logo">WatchEarn <span>BD</span></div><p>Watch eligible tasks & earn rewards</p><div id="authMsg"></div><input id="email" type="email" placeholder="Email"><input id="password" type="password" placeholder="Password"><button id="loginBtn" class="primary">Login</button><button id="signupBtn" class="secondary">Create account</button></div></div>
+<div id="app" class="hidden">
+<header class="topbar"><div><div class="brand">WatchEarn <span>BD</span></div><div class="welcome" id="welcome">Welcome 👋</div></div><button class="balance" id="balance">৳0.00</button></header>
+<main id="content"></main>
+<nav class="bottom-nav"><button data-page="watch" class="active"><b>▶</b><span>Watch</span></button><button data-page="proofs"><b>▤</b><span>Proofs</span></button><button data-page="discover"><b>◉</b><span>Discover</span></button><button data-page="invite"><b>♣</b><span>Invite</span></button><button data-page="profile"><b>●</b><span>Profile</span></button></nav></div>
+<div class="modal" id="modal"><div class="modal-card"><div class="spinner"></div><h3 id="modalTitle">Preparing…</h3><p id="modalText">Please wait</p><button class="primary hidden" id="claimBtn">Claim Reward</button></div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js"></script>
+</body></html>
